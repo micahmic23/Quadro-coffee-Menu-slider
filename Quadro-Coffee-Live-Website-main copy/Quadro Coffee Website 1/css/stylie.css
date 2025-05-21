@@ -1,0 +1,254 @@
+/*stylie.css*/
+/* This the css for the menu slider. */
+
+/* Removing any default margin and padding for the html page. */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel {
+    padding: 0rem;
+}
+
+.slider-wrapper {
+  position: relative;
+} 
+
+.carousel .slider-wrapper .slider .slide {
+  padding: 3em;
+  padding-bottom: 5rem;
+}
+
+.carousel .slider-wrapper .slider .slide .main-content {
+  margin: 6.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel .slider-wrapper .slider .slide .content1 {
+  width: 100%;
+  padding: 5rem;
+}
+
+.content1 .description {
+  padding-right: 4rem;
+}
+
+.carousel .slider-wrapper .slider .slide .main-content .image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1.5rem;
+  position: absolute;
+  bottom: 10rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: white;
+  opacity: 0.5;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+.slider .slide {
+  flex: 1 0 100%;
+}
+
+/* bg colors */
+#slide-1 {
+    background-color: rgba(255, 255, 255, 1.0);
+    background: radial-gradient(
+      85% 150% at 85% 65%,
+      rgba(237, 236, 232, 1) 0%,
+      rgba(192, 191, 188, 1) 42%,
+      rgba(135, 134, 132, 1) 100%
+    );
+}
+
+#slide-2 {
+    background-color: rgba(255, 255, 255, 1.0);
+    background: radial-gradient(
+      85% 150% at 85% 65%,
+      rgba(201, 208, 186, 1) 15%,
+      rgba(167, 180, 142, 1) 33%,
+      rgba(129, 148, 93, 1) 54%,
+      rgba(137, 162, 89, 1) 96%
+    );
+}
+
+#slide-3 {
+    background-color: rgba(255, 255, 255, 1.0);
+    background: radial-gradient(
+      85% 150% at 85% 65%,
+      rgba(197, 180, 144, 1) 0%,
+      rgba(200, 151, 78, 1) 50%,
+      rgba(140, 72, 35, 1) 100%
+    );
+}
+
+#slide-4 {
+    background-color: rgba(255, 255, 255, 1.0);
+    background: radial-gradient(
+      85% 150% at 85% 65%,
+      rgba(215, 199, 194, 1) 0%,
+      rgba(147, 123, 114, 1) 48%,
+      rgba(112, 84, 73, 1) 100%
+    );
+}
+
+.carousel .slider-wrapper .slider .heading {
+  z-index: 2;
+  -webkit-text-stroke: .05rem #fff;
+}
+
+.carousel .slider-wrapper .slider .heading span {
+  color: #fff;
+}
+
+.carousel .slider-wrapper .slider h2 {
+  font-size: 7em;
+  margin-bottom: 20px;
+  color: white;
+  text-shadow: 0px 4px 4px #00000040;
+}
+
+.carousel .slider-wrapper .slider .description{
+  color: white;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  line-height: 1.8;
+}
+
+.carousel .slider-wrapper .slider .order {
+  background-color:transparent;
+  color: #fff;
+  padding: 10px;
+  font-size: large;
+  font-size: 1.5rem;
+  border: 1px solid #fff;
+  margin-top: 20px;
+}
+
+.carousel .slider-wrapper .slider .order:hover {
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background-color: #eb455f;
+  border: 1px solid #eb455f;
+}
+
+.carousel .slider-wrapper .slider figcaption {
+  font-weight: bold;
+  font-size: 3em;
+  color: #fff;
+  text-shadow: 0px 4px 4px #00000040;
+}
+
+
+@media (max-width: 460px) {
+
+.carousel .slider {
+  width: 100%;
+  height: 932px;
+}
+
+.content1 h2{
+  display: none;
+}
+
+.content1 .description {
+  display: none;
+}
+
+.content1 {
+  text-align: center;
+}
+
+.content1 .order {
+  font-size: 2rem;
+  width: 120px;
+}
+
+.main-content {
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* bg colors mobile */
+.slider-1 {
+  background-color: rgba(255, 255, 255, 1.0);
+  background: radial-gradient(
+      85% 150% at 45% 25%,
+      rgba(237, 236, 232, 1) 0%,
+      rgba(192, 191, 188, 1) 42%,
+      rgba(135, 134, 132, 1) 100%
+  );
+}
+
+.slider-2 {
+  background-color: rgba(255, 255, 255, 1.0);
+  background: radial-gradient(
+      55% 80% at 10% 65%,
+      rgba(201, 208, 186, 1) 15%,
+      rgba(167, 180, 142, 1) 33%,
+      rgba(129, 148, 93, 1) 54%,
+      rgba(137, 162, 89, 1) 96%
+  );
+}
+
+.slider-3 {
+  background-color: rgba(255, 255, 255, 1.0);
+  background: radial-gradient(
+      95% 150% at 55% 65%,
+      rgba(197, 180, 144, 1) 0%,
+      rgba(200, 151, 78, 1) 50%,
+      rgba(140, 72, 35, 1) 100%
+  );
+}
+
+.slider-4 {
+  background-color: rgba(255, 255, 255, 1.0);
+  background: radial-gradient(
+      95% 150% at 55% 65%,
+      rgba(215, 199, 194, 1) 0%,
+      rgba(147, 123, 114, 1) 48%,
+      rgba(112, 84, 73, 1) 100%
+  );
+}
+
+.image {
+  margin-top: -3rem;
+}
+
+.image img {
+  width: 170%;
+}
+
+}
